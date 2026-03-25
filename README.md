@@ -1,12 +1,12 @@
 # Advanced-Programing-Java_Project_-Internship-Management-System
 Below are the steps to run the project 
 
-1. Download the project and open in intelij 
-2. open the application.properties file and do the changes mentioned in it like port number and the database password etc
-3. Once the changes are made please create a database called internship_db;
-4. Once the database is created run the spring boot application 
-5. once the application starts the hibernate will check if the tables exists if not , the tables will be created Automatically 
-6. once the application is running please check the port-number on which the tomcat is running the application on 
+1. Download the project and open in intelij.
+2. open the application.properties file and do the changes mentioned in it like port number and the database password etc.
+3. Once the changes are made please create a database called internship_db in mysql workbench.
+4. Once the database is created and changes are made in application.properties run the spring boot application.
+5. once the application starts the hibernate will check if the tables exists if not , the tables will be created Automatically.
+6. once the application is running please check the port-number on which the tomcat is running the application on.
 
 
 
@@ -44,7 +44,7 @@ INSERT INTO intern_skills (intern_id, skill_id) VALUES (1, 1);
 INSERT INTO intern_skills (intern_id, skill_id) VALUES (1, 2);
 
 ###... Below is the apis i have provided which can be used to test if the data are added and CRUD operations are performed 
-
+** NOTE : When testing the below APIS please crosscheck th port number **
 1. Get All Skills
 GET http://localhost:8080/skills
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 "applicationDate": "2026-03-19T10:30:00"
 }
 
-**Note : When testing the APIs if an Intern Holds and Application or and Application is assigned to an Intern the Delete method will throw and errow 
+**Note : When testing the APIs if an Intern Holds and Application or an Application is assigned to an Intern the Delete method will throw an Error
 for this first the Application must be deleted and then the Intern Will be Deleted 
 **Note: All the apis provided above are the get method other methods like Post , Delete , Put , can be also performed** 
 
